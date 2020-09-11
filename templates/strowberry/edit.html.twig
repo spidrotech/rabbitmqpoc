@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Strowberry{% endblock %}
+
+{% block body %}
+    <h1>Edit Strowberry</h1>
+
+    {{ include('strowberry/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('strowberry_index') }}">back to list</a>
+
+    {{ include('strowberry/_delete_form.html.twig') }}
+{% endblock %}
